@@ -1,0 +1,1 @@
+var BookModule=function(){CustomGetTemplateFn('book.html')(obj);};

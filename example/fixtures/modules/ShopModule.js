@@ -1,0 +1,1 @@
+var ShopModule=function(){CustomGetTemplateFn('shop.html')(obj);};var AreaModule=function(){CustomGetTemplateFn('area.html')(obj);};
