@@ -1,11 +1,11 @@
-# gulp-jst-concat
+# gulp-concat-jst
 
 > concat jst file to module's js file for gulp
 
 ## Getting Started
 
 ```shell
-npm install gulp-jst-concat --save-dev
+npm install gulp-concat-jst --save-dev
 ```
 
 ### Usage Examples

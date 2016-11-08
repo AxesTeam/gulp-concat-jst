@@ -1,5 +1,5 @@
 {
-  "name": "gulp-jst-concat",
+  "name": "gulp-concat-jst",
   "version": "0.0.1",
   "description": "concat jst file to module's js file for gulp",
   "dependencies": {
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:AxesTeam/gulp-jst-concat.git"
+    "url": "git@github.com:AxesTeam/gulp-concat-jst.git"
   },
   "keywords": [
     "gulp",
@@ -33,7 +33,7 @@
     "node": ">=0.10"
   },
   "readmeFilename": "README.md",
-  "homepage": "https://github.com/AxesTeam/gulp-jst-concat",
-  "_id": "gulp-jst-concat@0.0.1",
-  "_from": "gulp-jst-concat@0.0.1"
+  "homepage": "https://github.com/AxesTeam/gulp-concat-jst",
+  "_id": "gulp-concat-jst@0.0.1",
+  "_from": "gulp-concat-jst@0.0.1"
 }

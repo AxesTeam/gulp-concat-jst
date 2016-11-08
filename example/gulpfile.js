@@ -1,5 +1,5 @@
 var gulp  = require('gulp');
-var jst_concat  = require('../index');
+var concat_jst  = require('../index');
 var del    = require('del');
 var seq = require("gulp-sequence");
 var jst = require("gulp-jst");
@@ -14,9 +14,9 @@ gulp.task('jst', function(){
         .pipe(gulp.dest("build/template"))
 });
 
-gulp.task('jst-concat', function(){
+gulp.task('concat_jst', function(){
     return gulp.src("fixtures/modules/*.js")
-        .pipe(jst_concat({
+        .pipe(concat_jst({
             separator_start: '/**start**/',
             separator_end: '/**end**/',
             jst_path: 'build/template/',
@@ -30,4 +30,4 @@ gulp.task('jst-concat', function(){
 });
 
 
-gulp.task('default', seq("clean", "jst", "jst-concat"));
+gulp.task('default', seq("clean", "jst", "concat_jst"));
