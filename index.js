@@ -26,7 +26,7 @@ module.exports = function(options) {
       }
 
       if (file.isBuffer()) {
-          var js_source = fs.readFileSync(file.path,  { encoding : 'UTF-8'});
+          var js_source = String(file.contents);
           //通过正则找出所有的 GetTemplate() 方法，得到模版文件列表
           var myregexp = options.pattern;
           var group = js_source.match(myregexp);
@@ -42,6 +42,10 @@ module.exports = function(options) {
                       var jst = fs.readFileSync(options.jst_path + file_name + options.jst_ext, { encoding : 'UTF-8'});
                       // 这个jst的组件最后没有加上分号，这边要手动加下，免得后面合并的时候，有语法错误
                       jst += ";";
+                      var jstGroup = jst.match(myregexp);
+                      if(jstGroup) {
+                          group.push.apply(group, jstGroup)
+                      }
                       //运行自定义替换函数
                       if (options.replace) {
                           jst = options.replace(jst, file_name);
