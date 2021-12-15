@@ -1,6 +1,6 @@
 {
   "name": "gulp-concat-jst",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "concat jst file to module's js file for gulp",
   "dependencies": {
     "graceful-fs": "^4.1.10",
